@@ -1,0 +1,389 @@
+/* Данный сайт был сделан на основе пройденного матертала курса 
+и своего личного опыта, исскуственный интелект не был использован */
+body {
+    margin: 0px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/city.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buttomNav {
+    margin: 15%;
+    color: greenyellow;
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+    transition: font-size 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+}
+
+.buttomNav:hover {
+    font-size: 30px;
+    color: #ff02fd;
+}
+
+.buttomNav:active {
+    font-size: 30px;
+    color: #f60840;
+}
+
+.logoImg {
+    width: 70%;
+    margin: 10%;
+}
+
+.timeText {
+    margin: 10px;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
+.buttomTime {
+    margin: 2%;
+    width: 15%;
+    height: 6%;
+    border-radius: 20px;
+    background-color: transparent;
+    border: greenyellow solid 4px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.buttomTimeText {
+    color: #fff;
+    font-size: 20;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+buttomTimeTextBlack {
+    color: #000;
+}
+
+.buttomTime:hover .buttomTimeText {
+    color: #000;
+}
+
+.buttomTime:hover {
+    background-color: greenyellow;
+}
+
+.buttomTime:focus-visible {
+    background-color: greenyellow;
+}
+
+.dateOutput {
+    color: #fff;
+    font-size: 25;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+/* Main */
+
+main {
+    background-color: #00000d;
+}
+
+.mainLight {
+    background-color: white;
+}
+
+.sectionMain {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btnLet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textMain {
+    margin: 10%;
+    color: #fff;
+    font-size: 25px;
+    width: 60%;
+    line-height: 2;
+    font-family: 'Press Start 2P', cursive;   
+    transition: font-size 0.5s ease, color 0.5s ease;
+} 
+
+.textLignt {
+    color: #000;
+}
+
+.sectionSecond {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.marginBox {
+    margin-bottom: 10%;
+}
+
+.textSecondMain {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;  
+    transition: font-size 0.5s ease, color 0.5s ease; 
+}
+
+.textSecondMainBlack {
+    color: #000;
+} 
+
+.textSecond {
+    color: #fff;
+    font-size: 25px;
+    width: 60%;
+    text-align: center;
+    line-height: 2;
+    font-family: 'Press Start 2P', cursive;   
+    transition: font-size 0.5s ease, color 0.5s ease;
+}
+
+.textSecondBlack {
+    color: #000;
+}
+
+.mailLink {
+    color:  greenyellow;;
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* Footer */
+
+footer {
+    background-color: #00000d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerLight {
+    background-color: #fff;
+}
+
+.navFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textFooter {
+    color: #fff;
+    font-size: 15px;
+    width: 60%;
+    text-align: center;
+    line-height: 2;
+    font-family: 'Press Start 2P', cursive;   
+
+}
+
+.buttomNavFot {
+    margin: 20% 5% 10% 5%;
+    color: greenyellow;
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+}
+
+.buttomNavFot:hover {
+    color: #ff02fd;
+}
+
+.buttomNavFot:active {
+    color: #f60840;
+}
+
+.sectionPhoto {
+    width: 100%;
+    height: 367px;
+    background-image: url(../assets/footerImg.png); 
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: bottom;
+}
+/* Media screen changer */ 
+
+@media (max-width: 1145px) {
+    .buttomNav {
+        font-size: 20px;
+    }
+
+    .textMain {
+        font-size: 18px;
+    }
+
+    .textSecondMain {
+        font-size: 22px;
+    }
+    
+    .textSecond {
+        font-size: 18px;
+    }
+
+    .buttomNavFot {
+        font-size: 18px;
+    }
+
+    .buttomTimeText {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 860px) {
+    .buttomNav {
+        font-size: 15px;
+    }
+
+    .textMain {
+        font-size: 14px;
+    }
+
+    .timeText {
+        font-size: 15px;
+    }
+
+    .textSecondMain {
+        font-size: 18px;
+    }
+    
+    .textSecond {
+        font-size: 14px;
+    }
+
+    .buttomNavFot {
+        font-size: 18px;
+    }
+
+    .buttomTime {
+        margin: 1%;
+        width: 25%;
+        height: 4%;
+    }
+
+    .buttomTimeText {
+        font-size: 9px;
+    }
+
+    .textFooter {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    .buttomNav {
+        font-size: 10px;
+    }
+
+    .textMain {
+        font-size: 10px;
+    }
+
+    .timeText {
+        font-size: 10px;
+    }
+
+    .textSecondMain {
+        font-size: 14px;
+    }
+    
+    .textSecond {
+        font-size: 10px;
+    }
+
+    .buttomNavFot {
+        font-size: 18px;
+    }
+
+    .buttomTime {
+        margin: 1%;
+        width: 25%;
+        height: 4%;
+    }
+
+    .buttomTimeText {
+        font-size: 7px;
+    }
+
+    .buttomNavFot {
+        font-size: 12px;
+    }
+
+    .textFooter {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 435px) {
+    .buttomNav {
+        font-size: 9px;
+    }
+
+    .textMain {
+        font-size: 8px;
+        width: 80%;
+    }
+
+    .timeText {
+        font-size: 10px;
+    }
+
+    .textSecondMain {
+        font-size: 10px;
+    }
+    
+    .textSecond {
+        font-size: 8px;
+        width: 80%;
+    }
+
+    .buttomNavFot {
+        font-size: 18px;
+    }
+
+    .buttomTime {
+        margin: 1%;
+        width: 25%;
+        height: 4%;
+    }
+
+    .buttomTimeText {
+        font-size: 7px;
+    }
+
+    .buttomNavFot {
+        font-size: 9px;
+    }
+
+    .textFooter {
+        font-size: 8px;
+    }  
+}
